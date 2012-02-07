@@ -5,10 +5,6 @@
   // in the document. This helps keep styles sexy regardless
   // of which headers a user chooses to use.
   //
-  //  Parameters
-  //
-  //    headers - Array, list of header styles
-  //
   // returns nothing
   $.fn.headsmart = function(){
     var contentElement = $(this)
@@ -17,11 +13,6 @@
 
     // sets up to six header styles to be spread over
     // the headers actually found in the content
-    //
-    //  Parameters
-    //
-    //    headers - Array, list of header styles
-    //    e       - Element whose children will be checked
     //
     // returns nothing
     function setHeaders(){
@@ -59,7 +50,7 @@
     //
     //  Parameters
     //
-    //    e - element to be look
+    //    e - element to be checked
     //
     // returns boolean
     function contains(e){
