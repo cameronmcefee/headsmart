@@ -16,8 +16,8 @@
     //
     // returns nothing
     function setHeaders(){
-      var existingHeaders = []
-      var headerStyles    = ''
+      var existingHeaders = [],
+          headerStyles    = ''
 
       // find which headers exist
       if(contains('h1')){
@@ -40,8 +40,7 @@
       }
 
       for(var i=0;i<existingHeaders.length;i++){
-        var newClass = 'header-level-'+(i+1)
-        contentElement.children(existingHeaders[i]).addClass(newClass)
+        contentElement.children(existingHeaders[i]).addClass('header-level-'+(i+1))
       }
     }
 
@@ -54,11 +53,7 @@
     //
     // returns boolean
     function contains(e){
-      if(contentElement.children(e).length > 0){
-        return true
-      } else {
-        return false
-      }
+      return (contentElement.children(e).length > 0) ? true : false
     }
   }
 })(jQuery)
